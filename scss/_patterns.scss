@@ -1,0 +1,29 @@
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    justify-content: center;
+    background-color: var(--yellow);
+    padding: 1.9rem 3.7rem 1.9rem 5.2rem;
+    transition: background .3s ease;
+    &:hover {
+        background-color: var(--black);
+        span {
+            color: var(--white);
+        }
+        img {
+            filter: invert(1);
+        }
+    }
+    span {
+        color: var(--black);
+        font-family: var(--font-title);
+        font-size: 4.6rem;
+        font-weight: 400;
+        letter-spacing: 0.23rem;
+        transition: color .3s ease;
+    }
+    img {
+        transition: filter .3s ease;
+    }
+}
