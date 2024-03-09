@@ -34,3 +34,11 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Rock Salt';
+    src: url('/fonts/RockSalt-Regular.woff2') format('woff2'),
+        url('/fonts/RockSalt-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
