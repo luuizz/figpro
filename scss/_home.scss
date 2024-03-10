@@ -373,3 +373,72 @@
         }
     }
 }
+
+.s-world {
+    padding-top: 11.3rem;
+    padding-bottom: 13.4rem;
+    background: url(../assets/bg-world.webp) no-repeat bottom center;
+    position: relative;
+    overflow-y: hidden;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title {
+            text-align: center;
+            margin-bottom: 5.4rem;
+            h2 {
+                color: var(--primary);
+                text-align: center;
+                font-family: var(--font-title);
+                font-size: 43.1rem;
+                font-weight: 400;
+                line-height: 0.7;
+                letter-spacing: 4.741rem;
+                margin-bottom: 2.9rem;
+                text-transform: uppercase;               
+            }
+            span {
+                color: var(--cor-secundaria, #FCC26B);
+                font-size: 2.5rem;
+                font-weight: 500;
+                line-height: 155.3%;
+                letter-spacing: 0.575rem;
+                text-transform: uppercase;
+            }
+        }
+        p {
+            text-align: center;
+            color: #9C9C9C;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 155.3%;
+            max-width: 63.2rem;
+            margin-bottom: 6.3rem;
+        }
+    }
+    .illustra {
+        position: absolute;
+        z-index: 1;
+        pointer-events: none;
+        &.gaviao {
+            top: -4.4rem;
+            left: 0;
+        }
+        &.tigre {
+            bottom: 0;
+            left: 0;
+        }
+        &.polvo {
+            top: -4.4rem;
+            right: 0;
+        }
+        &.coruja {
+            bottom: 7.1rem;
+            right: 0;
+        }
+    }
+    @media (min-width: 1441px) {
+        background-size: cover;
+    }
+}
