@@ -1,1 +1,1 @@
-"use strict";
+"use strict";var lenis=new Lenis;function raf(e){lenis.raf(e),requestAnimationFrame(raf)}requestAnimationFrame(raf);var header=document.querySelector("header");window.addEventListener("scroll",function(){50<window.scrollY?header.classList.add("fixed"):header.classList.remove("fixed")}),AOS.init({once:!0,duration:1e3,disable:"phone"});
