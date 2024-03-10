@@ -9,6 +9,9 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        .btn-mobile {
+            display: none;
+        }
         nav {
             display: flex;
             gap: 32.6rem;
@@ -45,6 +48,19 @@ header {
             .btns {
                 display: flex;
                 gap: 3rem;
+            }
+        }
+    }
+    @media (max-width: 560px) {
+        padding: 3rem 0;
+        .container {
+            .btn-mobile {
+                display: block;
+            }
+            nav {
+                .menu {
+                    display: none;
+                }
             }
         }
     }

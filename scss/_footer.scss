@@ -72,4 +72,41 @@ footer {
             }
         }
     }
+    @media (max-width: 991px) {
+        .container {
+            .first-area {
+                flex-direction: column;
+                align-items: center;
+                gap: 4rem;
+                text-align: center;
+                .left {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .right {
+                    ul {
+                        li {
+                            &:not(:last-child) {
+                                margin-right: 1.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 560px) {
+        .first-area {
+            .left {
+                p {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .second-area {
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+    }
 }
