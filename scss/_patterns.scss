@@ -84,6 +84,18 @@
         ul {
             display: flex;
             gap: 2rem;
+            li {
+                a {
+                    img {
+                        transition: transform .3s ease;
+                    }
+                    &:hover {
+                        img {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
         }
     }
     @media (max-width: 1200px) {
